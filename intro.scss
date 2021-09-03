@@ -1,0 +1,12 @@
+.intro{
+  display: flex;
+  align-items: center;
+  padding: 110px 0 160px;
+  & > *{
+    width: 50%;
+  }
+  &-desc{
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+}

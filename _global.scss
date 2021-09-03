@@ -84,12 +84,27 @@ a{
     background-color: $primary-color;
     top:50%;
   }
+  &-caption--left{
+    padding-left: 40px;
+    margin-bottom: 30px;
+  }
+  &-caption--left:after{
+    display: none;
+  }
+  &-caption--left:before{
+    transform: none;
+  }
   &-heading{
-    text-transform: uppercase;
     font-size: 50px;
     line-height: 1.4;
+    font-weight: 600;
     span{
       display: block;
     }
   }
+}
+.text{
+  font-weight: 300;
+  color: $gray;
+  line-height: 1.6;
 }

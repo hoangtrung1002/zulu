@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
@@ -43,6 +47,7 @@ a {
   cursor: pointer;
   background-color: transparent;
   line-height: normal;
+  transition: all 0.2s linear;
 }
 .button--primary {
   color: white;
@@ -231,6 +236,92 @@ a {
 .intro-desc {
   margin-top: 40px;
   margin-bottom: 30px;
+}
+
+.plan {
+  padding-bottom: 100px;
+}
+.plan-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 45px;
+}
+.plan-item {
+  border: 1px solid #EEE;
+  border-radius: 20px;
+  padding: 75px 25px;
+  position: relative;
+}
+.plan-item {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s linear;
+}
+.plan-item:hover {
+  border-color: transparent;
+  box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.03);
+}
+.plan-item:hover .plan-start {
+  background-color: #579AFF;
+  border-color: #579AFF;
+  color: white;
+}
+.plan-price {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #EEE;
+}
+.plan-symbol {
+  font-size: 28px;
+  vertical-align: top;
+}
+.plan-month {
+  font-weight: 500;
+  font-size: 40px;
+}
+.plan-desc {
+  margin-bottom: 55px;
+}
+.plan-feature {
+  font-size: 20px;
+  margin-bottom: 35px;
+  font-weight: 500;
+}
+.plan-feature-item {
+  color: #868D93;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+.plan-feature-item:last-of-type {
+  margin-bottom: 75px;
+}
+.plan-feature-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.plan-start {
+  display: block;
+  margin: 0 auto;
+  width: max-content;
+  margin-top: auto;
+}
+.plan-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  background-color: #FF858D;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 0px 20px 0 20px;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=styles.css.map */

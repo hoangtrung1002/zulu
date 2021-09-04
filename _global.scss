@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+ul{
+  list-style: none;
+}
+
 body{
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
@@ -43,6 +47,7 @@ a{
   cursor: pointer;
   background-color: transparent;
   line-height: normal;
+  transition: all 0.2s linear;
   &--primary{
       color:white;
       background-color: $primary-color;

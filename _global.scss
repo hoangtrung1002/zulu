@@ -113,3 +113,20 @@ a{
   color: $gray;
   line-height: 1.6;
 }
+.text--dark{
+  color:$gray-dark;
+}
+.logo{
+  display: inline-block;
+}
+.bg{
+  &-google{
+    background-color: #FF7879;
+  }
+  &-twitter{
+    background-color: #7AAFFF;
+  }
+  &-instagram{
+    background-color: #FF8978;
+  }
+}
